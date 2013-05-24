@@ -1,12 +1,17 @@
 package no.runsafe.voidgenerator;
 
 import no.runsafe.framework.RunsafePlugin;
+import org.bukkit.generator.ChunkGenerator;
 
 public class Plugin extends RunsafePlugin
 {
 	@Override
 	protected void PluginSetup()
 	{
-		addComponent(SomeComponent.class); // Replace this with your own components, this is just an example.
+	}
+
+	public ChunkGenerator getDefaultWorldGenerator(String worldName, String id)
+	{
+		return new Generator();
 	}
 }
