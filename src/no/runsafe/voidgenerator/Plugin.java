@@ -1,7 +1,11 @@
 package no.runsafe.voidgenerator;
 
 import no.runsafe.framework.RunsafePlugin;
+import org.bukkit.Location;
+import org.bukkit.World;
 import org.bukkit.generator.ChunkGenerator;
+
+import java.util.Random;
 
 public class Plugin extends RunsafePlugin
 {
@@ -13,5 +17,10 @@ public class Plugin extends RunsafePlugin
 	public ChunkGenerator getDefaultWorldGenerator(String worldName, String id)
 	{
 		return new Generator();
+	}
+
+	public Location getFixedSpawnLocation(World world, Random random)
+	{
+		return new Location(world, 0.5D, 64D, 0.5D);
 	}
 }
