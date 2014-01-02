@@ -1,6 +1,6 @@
 name: VoidGenerator
+load: STARTUP
 main: no.runsafe.voidgenerator.Plugin
 version: 1.0.@BUILD@
 author: mortenn
 description: Empty world generator
-load: STARTUP
