@@ -18,7 +18,7 @@ public class Generator extends ChunkGenerator
 			Arrays.fill(chunk[n], air);
 
 		if (cx == 0 && cz == 0)
-			chunk[4][0] = (byte) Item.BuildingBlock.Stone.getItemID();
+			chunk[4][0] = (byte) Item.BuildingBlock.Stone.Stone.getItemID();
 
 		return chunk;
 	}
